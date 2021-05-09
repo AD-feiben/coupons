@@ -35,3 +35,5 @@ export const getLocal = (key: string): any => {
     return res
   }
 }
+
+export const isWeixin = /micromessenger/i.test(navigator.userAgent)

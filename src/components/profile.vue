@@ -31,6 +31,7 @@
 </template>
 
 <script lang="ts">
+import { isWeixin } from '@/utils'
 import { Dialog } from 'vant'
 import { defineComponent } from 'vue'
 
@@ -44,7 +45,7 @@ export default defineComponent({
   setup() {
     return {
       openOfficial: () => {
-        if (/micromessenger/i.test(navigator.userAgent)) {
+        if (isWeixin) {
           location.href = 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyMDQyNTc3OA==&subscene=0#wechat_redirect'
           return
         }
