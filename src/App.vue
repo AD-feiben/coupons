@@ -26,7 +26,7 @@ export default defineComponent({
   name: 'App',
 
   setup() {
-    let h1 = ref(null)
+    let h1 = ref()
     let showStatusBar = ref(false)
 
     const methods = {
@@ -35,9 +35,8 @@ export default defineComponent({
           showStatusBar.value = false
         } else {
           const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
-          showStatusBar.value = scrollTop > h1.value.offsetHeight
+          showStatusBar.value = scrollTop > h1.value?.offsetHeight
         }
-        console.log(showStatusBar.value)
       }
     }
 
