@@ -1,0 +1,86 @@
+@import url('./theme.scss');
+@import url('./mixin.scss');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --primary-color: #1989fa;
+  min-height: 100vh;
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background: var(--page-bg);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.container {
+  max-width: 677px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  padding: 0 15px;
+}
+
+.van-tabbar {
+  max-width: 677px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+
+  @include dark {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+header:after,
+.van-cell::after,
+[class*=van-hairline]::after {
+  @include dark {
+    border-color: rgba(255,255,255,0.1);
+  }
+}
+
+
+.van-dialog, .van-button--default {
+  @include dark {
+    background-color: #2c2c2c;
+  }
+}
+
+.van-cell-group,
+.van-cell {
+  background-color: var(--background-color);
+}
+
+.van-cell__title span {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.van-cell__label {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.van-field__control,
+.van-cell__value,
+.van-tabbar-item {
+  color: var(--text-color);
+}
+
+.van-tabbar-item--active {
+  color: var(--primary-color);
+  background-color: transparent;
+}

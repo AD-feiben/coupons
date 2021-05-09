@@ -1,0 +1,13 @@
+:root {
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --page-bg: #fff;
+  --background-color: #f6f6f6;
+}
+
+:root .dark {
+  --text-color: #ccc;
+  --shadow-color: rgba(255, 255, 255, 0.2);
+  --page-bg: #000;
+  --background-color: #111;
+}
