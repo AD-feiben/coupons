@@ -22,8 +22,7 @@
 </template>
 
 <script lang="ts">
-import { clipboard } from '@/utils'
-import { ImagePreview, Toast } from 'vant'
+import { ImagePreview } from 'vant'
 import { computed, defineComponent } from 'vue'
 import logo from '@/components/logo.vue'
 import { useStore } from 'vuex'
@@ -45,14 +44,6 @@ export default defineComponent({
 
     return {
       themeTip,
-      copy: async (data: string) => {
-        try {
-          await clipboard(data)
-          Toast.success('复制成功')
-        } catch (error) {
-          Toast.fail(`${data} 复制失败`)
-        }
-      },
       preview: (src: string) => {
         ImagePreview([ src ])
       },

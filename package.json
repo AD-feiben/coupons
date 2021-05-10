@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "clipboard": "^2.0.8",
     "normalize.css": "^8.0.1",
     "sass": "^1.32.12",
     "vant": "^3.0.16",

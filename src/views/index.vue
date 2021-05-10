@@ -19,8 +19,9 @@
 import { defineComponent, ref } from 'vue'
 import logo from '@/components/logo.vue'
 import { getCoupon } from '@/api'
-import { clipboard, isWeixin } from '@/utils'
+import { isWeixin } from '@/utils'
 import { Toast } from 'vant'
+
 // import profile from '@/components/profile.vue'
 
 export default defineComponent({
@@ -30,21 +31,22 @@ export default defineComponent({
   },
   setup () {
     let message = ref('')
+
     return {
       message,
       getCoupon: async () => {
         try {
           const { data } = await getCoupon(message.value)
+          console.log(data);
           const { plat, couponUrl, couponTpwd } = data
           if (isWeixin && plat === 'tb') {
-            await clipboard(couponTpwd)
-            Toast.success(`以为你复制淘口令${couponTpwd}若口令无法识别，请粘贴至淘宝搜索框搜索`)
+            // await clipboard(couponTpwd)
+            // Toast(`已为你复制淘口令，若口令无法识别，请粘贴至淘宝搜索框搜索`)
             return;
           }
-          window.open(couponUrl, '_blank')
+          location.href = couponUrl
         } catch (error) {
-        } finally {
-          // loading?.clear()
+          console.log(error)
         }
       }
     }

@@ -1,10 +1,17 @@
 {
   "name": "省钱助手",
   "short_name": "省钱助手",
-  "start_url": ".",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#fff",
   "description": "购物券、外卖券",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
   "theme_color": "#fff"
 }
