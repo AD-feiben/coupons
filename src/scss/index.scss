@@ -16,7 +16,20 @@ body {
   user-select: none;
 }
 
+#app {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+.air {
+  flex: 1;
+}
+
 .container {
+  width: 100%;
   max-width: 677px;
   margin: 0 auto;
   padding: 0 15px;
