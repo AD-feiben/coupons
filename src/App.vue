@@ -15,7 +15,7 @@
   <van-tabbar placeholder route>
     <van-tabbar-item replace :to="{ name: 'index' }" icon="shop-o">购物优惠</van-tabbar-item>
     <van-tabbar-item replace :to="{ name: 'takeout' }" icon="bag-o">外卖优惠</van-tabbar-item>
-    <van-tabbar-item replace :to="{ name: 'air' }" icon="contact">便携小空调</van-tabbar-item>
+    <van-tabbar-item replace :to="{ name: 'air' }" icon="smile-o">便携小空调</van-tabbar-item>
     <van-tabbar-item replace :to="{ name: 'contact' }" icon="contact">关于作者</van-tabbar-item>
   </van-tabbar>
 </template>
