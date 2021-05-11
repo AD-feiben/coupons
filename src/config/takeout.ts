@@ -28,5 +28,15 @@ export default [
     name: '美团酒店',
     icon: '/img/mt.svg',
     url: 'https://dwz.cn/nU7gOQv4'
+  },
+  {
+    name: '肯德基优惠',
+    icon: '/img/kfc.svg',
+    url: 'https://dwz.cn/4FXce7Kp'
+  },
+  {
+    name: '电影优惠',
+    icon: '/img/dy.svg',
+    url: 'https://dwz.cn/YX11hTU9'
   }
 ]
