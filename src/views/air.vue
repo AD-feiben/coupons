@@ -1,5 +1,5 @@
 <template>
-  <iframe class="air" src="http://192.168.1.103:3000/" frameborder="0"></iframe>
+  <iframe class="air" src="//air.fedevelop.cn/" frameborder="0"></iframe>
 </template>
 
 <script lang="ts">
