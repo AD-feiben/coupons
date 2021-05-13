@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -26,8 +26,13 @@ const router = createRouter({
         title: '关于作者'
       },
       component: () => import('@/views/contact.vue')
+    },
+    {
+      path: '/air',
+      name: 'air',
+      component: () => import('@/views/air.vue')
     }
   ]
-})
+});
 
-export default router
+export default router;
