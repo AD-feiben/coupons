@@ -22,7 +22,7 @@ export default [
   {
     name: '美团生鲜',
     icon: '/img/mt.svg',
-    url: 'https://dwz.cn/XusZTkK1'
+    url: 'https://dwz.cn/uyusbfx8'
   },
   {
     name: '美团团购',
