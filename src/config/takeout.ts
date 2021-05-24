@@ -5,6 +5,11 @@ export default [
     url: 'https://dwz.cn/pCd6tnHm'
   },
   {
+    name: '饿了么外卖',
+    icon: '/img/ele.svg',
+    url: 'https://tb.ele.me/wow/alsc/mod/3ba3e78bb37a220f352e6799?e=1&open_type=miniapp&inviterId=d55be93'
+  },
+  {
     name: '饿了么生鲜',
     icon: '/img/ele.svg',
     url: 'https://dwz.cn/EAWo4Ikr'
@@ -39,4 +44,4 @@ export default [
     icon: '/img/dy.svg',
     url: 'https://dwz.cn/YX11hTU9'
   }
-]
+];
