@@ -11,12 +11,14 @@ const tpwdConvert = (str: string) => {
   });
 };
 
+const session = process.env.TK_SESSION;
+
 /** 根据商品id转链 */
 const privilegeGet = (id: string) => {
   return _postTk('/privilegeGet', {
     adzone_id: '111353500466',
     site_id: '2184050129',
-    session: '700001003084d0f3981b144aa253bb0a9d256d3d75af19a2c34538eecff568982665e402210087108790',
+    session,
     item_id: id
   });
 };

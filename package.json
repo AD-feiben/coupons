@@ -20,6 +20,7 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@types/node": "^15.6.1",
     "@types/qs": "^6.9.6",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
