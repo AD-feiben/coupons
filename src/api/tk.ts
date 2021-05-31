@@ -1,7 +1,7 @@
 import { wait, post } from '@/utils';
 
 const _postTk = (url: string, data: any) => {
-  return post(`http://gateway.kouss.com/tbpub${url}`, data);
+  return post(`https://gateway.kouss.com/tbpub${url}`, data);
 };
 
 /** 根据口令查询商品id */

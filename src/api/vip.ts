@@ -3,7 +3,7 @@ import { post, dateFormat } from '@/utils';
 const apikey = process.env.VIP_API_KEY;
 
 const _postVip = (url: string, data: any) => {
-  return post('http://api.tbk.dingdanxia.com/vip' + url, { apikey, ...data }, true);
+  return post('https://api.tbk.dingdanxia.com/vip' + url, { apikey, ...data }, true);
 };
 
 /** 解析唯品会商品ID */
