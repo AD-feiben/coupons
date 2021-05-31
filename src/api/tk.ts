@@ -1,4 +1,5 @@
 import { wait, post } from '@/utils';
+const session = '700001003084d0f3981b144aa253bb0a9d256d3d75af19a2c34538eecff568982665e402210087108790';
 
 const _postTk = (url: string, data: any) => {
   return post(`https://gateway.kouss.com/tbpub${url}`, data);
@@ -10,8 +11,6 @@ const tpwdConvert = (str: string) => {
     password_content: str
   });
 };
-
-const session = process.env.TK_SESSION;
 
 /** 根据商品id转链 */
 const privilegeGet = (id: string) => {
