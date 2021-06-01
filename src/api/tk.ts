@@ -1,5 +1,5 @@
 import { wait, post } from '@/utils';
-const session = '700001003084d0f3981b144aa253bb0a9d256d3d75af19a2c34538eecff568982665e402210087108790';
+const session = '70000100f257190587bdcf6b4a2b76c4589f312887189639bc8600387be9130388f7fdf2210087108790';
 
 const _postTk = (url: string, data: any) => {
   return post(`https://gateway.kouss.com/tbpub${url}`, data);
