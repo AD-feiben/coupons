@@ -1,7 +1,8 @@
 import { wait, post } from '@/utils';
+const session = '70000100b33544994a99cd9fef4b974f28306e429e33719bd1ac252b11d478852280c142210087108790';
 
 const _postTk = (url: string, data: any) => {
-  return post(`http://gateway.kouss.com/tbpub${url}`, data);
+  return post(`https://gateway.kouss.com/tbpub${url}`, data);
 };
 
 /** 根据口令查询商品id */
@@ -16,7 +17,7 @@ const privilegeGet = (id: string) => {
   return _postTk('/privilegeGet', {
     adzone_id: '111353500466',
     site_id: '2184050129',
-    session: '70000100b33544994a99cd9fef4b974f28306e429e33719bd1ac252b11d478852280c142210087108790',
+    session,
     item_id: id
   });
 };

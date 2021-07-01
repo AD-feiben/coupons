@@ -22,10 +22,12 @@
 </template>
 
 <script lang="ts">
-import { ImagePreview } from 'vant'
 import { computed, defineComponent } from 'vue'
 import logo from '@/components/logo.vue'
 import { useStore } from 'vuex'
+import lightGallery from 'lightgallery';
+import 'lightgallery/scss/lightgallery.scss';
+import { GalleryItem } from 'lightgallery/lg-utils';
 
 export default defineComponent({
   name: 'Contact',
@@ -45,7 +47,13 @@ export default defineComponent({
     return {
       themeTip,
       preview: (src: string) => {
-        ImagePreview([ src ])
+        const el = document.querySelector('.contact-page') as HTMLElement
+        const item = { src } as GalleryItem
+        lightGallery(el, {
+          dynamic: true,
+          counter: false,
+          dynamicEl: [item]
+        }).openGallery();
       },
       refresh () {
         location.reload()
