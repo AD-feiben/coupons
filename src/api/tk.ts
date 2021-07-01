@@ -16,7 +16,7 @@ const privilegeGet = (id: string) => {
   return _postTk('/privilegeGet', {
     adzone_id: '111353500466',
     site_id: '2184050129',
-    session: '700001003084d0f3981b144aa253bb0a9d256d3d75af19a2c34538eecff568982665e402210087108790',
+    session: '70000100b33544994a99cd9fef4b974f28306e429e33719bd1ac252b11d478852280c142210087108790',
     item_id: id
   });
 };
