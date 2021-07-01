@@ -1,1 +1,0 @@
-import{d as r,c as e,g as a}from"./vendor.6f060ade.js";var s=r({name:"Air",setup:()=>({})});const n={class:"air",src:"//air.fedevelop.cn/",frameborder:"0"};s.render=function(r,s,o,d,f,t){return a(),e("iframe",n)};export default s;
